@@ -1320,9 +1320,20 @@ section {
 
 .onfocus .video-play {
   min-height: 400px;
-  background:/* linear-gradient(rgba(12, 68, 94, 0.4) 25%, rgba(12, 68, 94, 0.4) 52%),*/ url("../img/onfocus-video-bg.jpg") center center;
+  background: linear-gradient(rgba(var(--color-secondary-rgb), 0.5), rgba(var(--color-secondary-rgb), 0.8)), url("../img/onfocus-play-vid-bg.jpg") center center;
+  /*background: linear-gradient(rgba(12, 68, 94, 0.4) 25%, rgba(12, 68, 94, 0.4) 52%);*/
   background-size: cover;
 }
+video {
+  top: 90px;
+  position: absolute;
+  max-width: 100%;
+  max-height: 120%;
+  z-index:100;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
 
 .onfocus .content {
   background: linear-gradient(rgba(var(--color-secondary-rgb), 0.5), rgba(var(--color-secondary-rgb), 0.8)), url("../img/onfocus-content-bg.jpg") center center;
@@ -1333,8 +1344,10 @@ section {
 
 @media (min-width: 768px) {
   .onfocus .content {
-    padding: 80px;
+    padding: 40px;
   }
+  
+  
 }
 
 .onfocus .content h3 {
