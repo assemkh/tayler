@@ -1924,7 +1924,7 @@ video {
   height: 290px;
 }
 
-.contact .php-email-form button[type=submit] {
+.contact .php-email-form a[type=submit] {
   background: linear-gradient(0.4turn, #1eadf0, #0afb60);
   border: 0;
   padding: 13px 50px;
@@ -1933,7 +1933,7 @@ video {
   border-radius: 0;
 }
 
-.contact .php-email-form button[type=submit]:hover {
+.contact .php-email-form a[type=submit]:hover {
   background: linear-gradient(0.4turn ,#1eadf0, #0afb60);
 }
 
@@ -2181,3 +2181,50 @@ video {
   background: var(--color-primary);
   text-decoration: none;
 }
+
+
+
+.thanks .thanks-main{
+  margin: 50px auto 20px;
+  min-height: 150px;
+  background:  linear-gradient(0.4turn ,#1eadf0, #0afb60);
+}
+.thanks .thanks-main .content{
+  color: white;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+.thanks .thanks-main .content h1{
+  font-size: 72px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.thanks .getting-soon{
+  width: 70%;
+  margin: 0 auto;
+  color: var(--color-secondary);
+  text-align: center;
+}
+.thanks .getting-soon h1{
+  margin-bottom: 30px;
+}
+.thanks .back-btn{
+  background: linear-gradient(0.4turn, #1eadf0, #0afb60);
+  border: 0;
+  padding: 10px 15px;
+  color: var(--color-white);
+  transition: 0.4s;
+  border-radius: 20px;
+}
+.thanks .back-btn img{
+  width: 15px;
+}
+
+@media(max-width: 800px){
+  .thanks .thanks-main .content h1{
+    font-size: 50px;
+  }
+}
+
+
